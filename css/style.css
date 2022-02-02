@@ -40,6 +40,7 @@ p {
     background-color: var(--white);
     border-radius: var(--default-radius);
     margin: 50% auto;
+    box-shadow: 0 0 10px var(--Dark-blue);
 }
 
 .card__img {
@@ -68,24 +69,22 @@ p {
     margin: 0 auto;
     padding: 0.5rem;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .stats__icon {
     width: 40px;
 }
 .stats__heading {
-    position: relative;
-    left: 1rem;
+    justify-content: space-evenly;
     font-weight: 700;
     color: var(--Dark-blue);
 }
 
 .stats__rate {
-    position: relative;
-    top: 1.5rem;
-    left: -4rem;
     color: var(--Desaturated-blue);
 }
+
 
 .card__stats a {
     position: relative;
@@ -118,13 +117,16 @@ p {
 }
 
 .card__cancel {
-    text-align: center;
+    color: var(--Desaturated-blue);
+    margin: 6.6rem;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .card__cancel:hover {
     color: var(--Dark-blue);
     cursor: pointer;
+    
 }
 
 /* .attribution {
