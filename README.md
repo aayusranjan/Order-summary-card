@@ -57,18 +57,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In order for your background-image to take height of entire screen,you must add height:100vh; rule. It’s telling the browser to take the entire 100% of available view-port height(vh = view-port height).
 
-To see how you can add code snippets, see below:
+Now,in order for your text content to be in the middle of the background-image you’ll need to apply display:flex;
+
+align-items:center => this will center text horizontally
+justify-content:center => this will center text vertically
+
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+ little white-space around the screen.In order to fix that replace default margin:
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+*
+{
+ margin: 0px;
+ padding: 0px;
+ font-family: monospace;
 }
-```
+//it's remove
+``
 ```js
 const proudOfThisFunc = () => {
   console.log('🎉')
